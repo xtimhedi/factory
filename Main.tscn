@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bf5j3bn2860c2"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6co65"]
+
+[sub_resource type="Sky" id="Sky_6l2ef"]
+sky_material = SubResource("ProceduralSkyMaterial_6co65")
+
+[sub_resource type="Environment" id="Environment_yipjd"]
+background_mode = 2
+background_energy_multiplier = 1.46
+sky = SubResource("Sky_6l2ef")
+
+[node name="Main" type="Node3D" unique_id=2046453792]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1242747996]
+transform = Transform3D(-0.109469354, -0.25629717, 0.96037936, 0.09701779, 0.95881766, 0.26693904, -0.9892442, 0.12239551, -0.080095746, 3.7262435, 2.7453303, 0)
+fov = 44.86282
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2075885577]
+environment = SubResource("Environment_yipjd")
